@@ -1,0 +1,61 @@
+blink 
+{
+animation: blink 2s infinite; /* Параметры анимации */
+}
+@keyframes blink {
+from { opacity: 1; /* Непрозрачный текст */ }
+to { opacity: 0; /* Прозрачный текст */ }
+}
+invisible 
+{
+opacity: 0
+}
+typewrite 
+{
+  color: black;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .17em solid #e29508;  
+  white-space: nowrap;  
+  margin: 0 auto;  
+  letter-spacing: .17em;
+  animation:  
+  typing 3.5s steps(30, end),
+  blink-caret .7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+ /* IE and EDGE */
+        progress {
+            /* RESETS */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: none;
+ 
+            width: 300px;
+            height: 15px;
+            border-radius: 20px;
+            background-color: #777;
+            color: rgb(20, 240, 221);
+        }
+ 
+        /* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+        progress::-webkit-progress-bar {
+            background-color: #777;
+            border-radius: 20px;
+ }
+ 
+        progress::-webkit-progress-value {
+            background-color: rgb(20, 240, 221);
+            border-radius: 20px;
+        }
+ 
+        /* MOZILLA FIREFOX */
+        progress::-moz-progress-bar {
+            background-color: rgb(20, 240, 221);
+            border-radius: 20px;
+        }
